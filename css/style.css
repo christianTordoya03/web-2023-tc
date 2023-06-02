@@ -81,6 +81,14 @@ section{
    text-transform: capitalize;
 }
 
+.heading1{
+   text-align: center;
+   padding-bottom: 2.5rem;
+   font-size: 3rem;
+   color: white;
+   text-transform: capitalize;
+}
+
 .btn,
 .inline-btn{
    margin-top: 1rem;
@@ -198,11 +206,53 @@ section{
    display: none;
 }
 
-.home{
-   background:url('../images/costa-verde-lima.jpg') no-repeat;
-   background-size: cover;
-   background-position: center;
+div, h1, p, a, video, h2{
+   z-index: 2;
+   position: relative;
 }
+.content {
+ position: relative;
+ top: 30%;
+ z-index: 2;
+ margin: 0 auto;
+ max-width: 720px;
+ text-align: center;
+}
+
+.content__heading {
+ margin-bottom: 24px;
+ color: rgb(39,39,39);
+ font-size: 44px;
+}
+
+.content__teaser {
+ margin-bottom: 24px;
+ color: rgb(89,89,89);
+ font-size: 22px;
+}
+
+.content__cta {
+ display: inline-block;
+ margin: 0;
+ padding: 12px 48px;
+ color: rgb(255,60,100);
+ font-size: 22px;
+ text-decoration: none;
+ border: solid 4px rgb(255,60,100);
+}
+
+.video {
+ position: fixed;
+ top: 55%; left: 50%;
+ z-index: 1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
+
+
 
 .home .center{
    min-height: 85vh;
@@ -246,7 +296,7 @@ section{
 }
 
 .home .center form .box p{
-   color: var(--light-color);
+   color: white;
    font-size: 1.7rem;
    padding-top: 1rem;
 }
