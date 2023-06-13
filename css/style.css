@@ -55,6 +55,13 @@ section{
    margin: 0 auto;
 }
 
+.mapa{
+   width: 80%;
+   border-radius: 10px;
+   display: flex;
+   margin: 0 10%;
+}
+
 .whatsapp {
    position:fixed;
    width:60px;
